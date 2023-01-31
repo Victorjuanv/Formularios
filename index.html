@@ -11,8 +11,10 @@
     <h1>FORMULARIO DE TRABAJO </h1>
 
     <div class="general">
-        <div class="datos">
+        
             <form action="ejemplo.php" method="get">
+                <fieldset>
+                    <legend>Datos personales</legend>
                 <p>Nombre y Apellidos: <input type="text" name="nombre" size="40"></p>
                 <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
                 <p>Número de teléfono: <input type="number" name="teléfono" min="1900"></p>
@@ -26,23 +28,24 @@
                     <input type="radio" name="hm" value="c"> Casado/a
                     <input type="radio" name="hm" value="v"> Viudo/a
                 </p>
-                
+                <p>DNI: <input type="" name="DNI" size="40"></p>
+            
+                </fieldset>
+
+                <fieldset>
+                    <legend>Acerca del TRABAJO</legend>
+                    <p>¿Por qué serías útil en la empresa?: <input type="text" name="nombre" width="fit content" height="40"> </p>
+                    <p>¿Cuáles son tus aptitudes más destacadas?:<input type="text" name="nombre" width="fit content" height="40"> </p>
+                    <p>¿Cuál consideras un sueldo adecuado para tu puesto de trabajo?:</p>
+                </fieldset>
               </form>
-
-
-        </div>
-        <div class="Documentación">
-            <p>DNI: <input type="" name="DNI" size="40"></p>
-            <p></p>
-
-        </div>
-        <div>
+       
             <p>
                 <input type="submit" value="Enviar">
                 <input type="reset" value="Borrar">
-            </p>
-        </div>
 
+            </p>
+        
 
 
     </div>
