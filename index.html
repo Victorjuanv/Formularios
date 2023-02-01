@@ -16,9 +16,9 @@
                 <fieldset>
                     <legend>Datos personales</legend>
                 <p>Nombre y Apellidos: <input type="text" name="nombre" size="40"></p>
-                <p>Año de nacimiento: <input type="number" name="nacido" min="1900"></p>
-                <p>Número de teléfono: <input type="number" name="teléfono" min="1900"></p>
-                <p>Código postal: <input type="number" name="código postal" min="1900"></p>
+                <p>Año de nacimiento: <input type="number" name="nacido" min="1945"></p>
+                <p>Número de teléfono: <input type="text" name="teléfono" ></p>
+                <p>Código postal: <input type="number" name="código postal" ></p>
                 <p>Sexo:
                   <input type="radio" name="hm" value="h"> Hombre
                   <input type="radio" name="hm" value="m"> Mujer
@@ -28,15 +28,22 @@
                     <input type="radio" name="hm" value="c"> Casado/a
                     <input type="radio" name="hm" value="v"> Viudo/a
                 </p>
-                <p>DNI: <input type="" name="DNI" size="40"></p>
+                <p>DNI: <input type="text" name="DNI" size="40"></p>
             
                 </fieldset>
 
                 <fieldset>
                     <legend>Acerca del TRABAJO</legend>
-                    <p>¿Por qué serías útil en la empresa?: <input type="text" name="nombre" width="fit content" height="40"> </p>
-                    <p>¿Cuáles son tus aptitudes más destacadas?:<input type="text" name="nombre" width="fit content" height="40"> </p>
+                    <p>¿Por qué serías útil en la empresa?: <textarea name="util" for="util" placeholder="Escribe por qué te consideras útil " maxlength="300" required></textarea> </p>
+                    <p>¿Cuáles son tus aptitudes más destacadas?:<textarea name="aptitudes" for="aptitudes" placeholder="Habla sobre tus aptitudes " maxlength="300" required></textarea> </p>
                     <p>¿Cuál consideras un sueldo adecuado para tu puesto de trabajo?:</p>
+                    <label for="sueldo">Elige la cifra que consideras:</label>
+                    <select name="sueldo" >
+                    <option value="1200" selected="selected">1200</option>
+                    <option value="1500">1500</option>
+                    <option value="1800">1800</option>
+                    <option value="2000">2000</option>
+                    </select>
                 </fieldset>
               </form>
        
